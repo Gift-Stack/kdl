@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #808080;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 0;
+}
+body {
+    background: #000;
+    position: relative;
+    h2 {
+        color: #fff;
+        padding-top: 50px;
+    }
+}
+.nav {
+    background: inherit;
+    opacity: 0.7;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    text-transform: uppercase;
+    padding: 0;
+    z-index: 1;
+    a {
+        font-size: 12px;
+        color: inherit;
+        padding: 8px 10px;
+        width: 25%;
+        text-align: center;
+        &:hover {
+            color: #000;
+            background: #d3d3d3;
+            text-decoration: none;
+        }
+    }
+}
+.content {
+    margin-top: 50px;
+    .tron {
+        img {
+            width: 30%;
+            // height: 10%;
+            border-radius: 100%;
+        }
+        h1,
+        p {
+            color: #fff;
+        }
+        h1 {
+            font-size: 64px;
+            padding: 20px 12px;
+        }
+    }
+    img {
+        width: 100%;
+        vertical-align: middle;
+        box-sizing: inherit;
+    }
+    #about {
+        h3 {
+            color: #fff;
+            padding: 50px 0 20px 0;
+        }
+    }
+    .progress {
+        border-radius: 0;
+        height: 30px;
+        margin-bottom: 15px;
+        &-bar {
+            background: grey;
+        }
+    }
+    #about-row {
+        margin-top: 60px;
+        // width: 100%;
+        background: lightgrey;
+        .inner {
+            padding: 30px;
+            .num,
+            .letter {
+                color: #000;
+            }
+        }
+    }
+    #pricing {
+        .row {
+            margin-bottom: 20px;
+            .col-md-4 {
+                border-radius: 0;
+                opacity: 0.5;
+                transition: opacity 0.1s ease-in-out;
+                margin-bottom: 20px;
+
+                li:first-child {
+                    background: #808080;
+                    padding: 30px;
+                    color: #fff;
+                    font-size: 30px;
+                }
+                li:nth-child(4) {
+                    padding: 16px;
+                    color: #fff;
+                    font-size: 20px;
+                }
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+#services {
+    .image {
+        text-align: center;
+        img {
+            height: 30vh;
+            z-index: 0;
+        }
+        a {
+            z-index: 1;
+            display: flex;
+            border-radius: 0;
+        }
+    }
+}
+#contacts {
+    height: 100vh;
+    i {
+        color: #fff;
+        font-size: 30px;
+        margin-right: 20px;
+    }
+    .deet {
+        p {
+            margin-bottom: 30px;
+        }
+    }
+    a {
+        color: inherit;
+        i {
+            transition: color, transform 0.2s ease-in-out;
+            &:hover {
+                // text-decoration: none;
+                color: inherit;
+                transform: rotateX(20deg);
+            }
+        }
+    }
+    footer {
+        margin-top: 180px;
+    }
+}
